@@ -1,4 +1,18 @@
 {
+  "command": {
+    "publish": {
+      "ignoreChanges": ["*.md"],
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com/org/tbcexp"
+    },
+    "version": {
+      "conventionalCommits": true
+    },
+    "bootstrap": {
+      "npmClientArgs": ["--no-package-lock"],
+      "hoist": false
+    }
+  },
   "packages": [
     "packages/*"
   ],
