@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@commitlint/cli": "^15.0.0",
@@ -52,5 +52,8 @@
   },
   "release": {
     "branches": ["master"]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
