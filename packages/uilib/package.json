@@ -1,6 +1,6 @@
 {
   "name": "@tbcexp/uilib",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ui library",
   "author": "@tiagobcoelho <tiagojnbaptistacoelho@gmail.com>",
   "license": "ISC",
@@ -19,8 +19,8 @@
     "precommit": "echo 'UILIB precommit runnig'"
   },
   "dependencies": {
-    "@tbcexp/uilib-button": "^0.1.0",
-    "@tbcexp/uilib-text": "^0.1.0"
+    "@tbcexp/uilib-button": "^0.1.1",
+    "@tbcexp/uilib-text": "^0.1.1"
   },
   "peerDependencies": {
     "react": "^17.0.2"

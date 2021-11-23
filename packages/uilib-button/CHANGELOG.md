@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/tiagobcoelho/lerna-monorepo/compare/@tbcexp/uilib-button@0.1.0...@tbcexp/uilib-button@0.1.1) (2021-11-23)
+
+
+### Bug Fixes
+
+* realease through lerna ([91ff39c](https://github.com/tiagobcoelho/lerna-monorepo/commit/91ff39c683c9118b3e34e515cf3b45d3bbe6ce78))
+
+
+
+
+
 # 0.1.0 (2021-11-23)
 
 
