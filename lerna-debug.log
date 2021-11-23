@@ -1,0 +1,31 @@
+0 silly argv {
+0 silly argv   _: [ 'run' ],
+0 silly argv   concurrency: 1,
+0 silly argv   stream: true,
+0 silly argv   since: 'HEAD',
+0 silly argv   'exclude-dependents': true,
+0 silly argv   excludeDependents: true,
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': '/usr/local/bin/lerna',
+0 silly argv   script: 'precommit'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/tiagocoelho/Documents/experimenting/lerna-monorepo
+3 info versioning independent
+4 notice filter changed since "HEAD"
+5 notice filter excluding dependents
+6 silly hasTags
+7 verbose hasTags false
+8 info Looking for changed packages since HEAD
+9 silly checking diff packages/uilib-button
+10 error Error: Command failed with exit code 128: git diff --name-only HEAD -- packages/uilib-button
+10 error fatal: bad revision 'HEAD'
+10 error     at makeError (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/execa/lib/error.js:60:11)
+10 error     at Function.module.exports.sync (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/execa/index.js:194:17)
+10 error     at Object.execSync (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/child-process/index.js:39:16)
+10 error     at diffSinceIn (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/collect-updates/lib/make-diff-predicate.js:75:23)
+10 error     at hasDiffSinceThatIsntIgnored (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/collect-updates/lib/make-diff-predicate.js:34:18)
+10 error     at isCandidate (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/collect-updates/collect-updates.js:113:77)
+10 error     at /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/collect-updates/lib/collect-packages.js:24:9
+10 error     at Map.forEach (<anonymous>)
+10 error     at collectPackages (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/collect-updates/lib/collect-packages.js:23:12)

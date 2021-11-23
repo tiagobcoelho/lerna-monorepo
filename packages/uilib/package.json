@@ -1,18 +1,15 @@
 {
   "name": "@tbcexp/uilib",
   "version": "0.0.0",
-  "description": "> TODO: description",
-  "author": "@tcoelho1 <tcoelho@advicefront.com>",
-  "homepage": "",
+  "description": "ui library",
+  "author": "@tiagobcoelho <tiagojnbaptistacoelho@gmail.com>",
   "license": "ISC",
-  "main": "lib/uilib.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagobcoelho/lerna-monorepo.git"
   },
-  "files": [
-    "lib"
-  ],
+  "types": "dist/types/index.ts",
   "publishConfig": {
     "access": "public"
   },
