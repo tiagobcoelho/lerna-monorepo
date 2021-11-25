@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/tiagobcoelho/lerna-monorepo/compare/@tbcexp/uilib@0.1.1...@tbcexp/uilib@0.1.2) (2021-11-25)
+
+
+### Bug Fixes
+
+* packages registry ([5d1c27b](https://github.com/tiagobcoelho/lerna-monorepo/commit/5d1c27ba26244f629ace0e3a728c0f21b68cf7c5))
+
+
+
+
+
 ## [0.1.1](https://github.com/tiagobcoelho/lerna-monorepo/compare/@tbcexp/uilib@0.1.0...@tbcexp/uilib@0.1.1) (2021-11-23)
 
 
