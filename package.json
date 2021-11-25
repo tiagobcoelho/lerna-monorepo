@@ -44,7 +44,7 @@
     "build:dev": "cross-env NODE_ENV=development webpack --config scripts/webpack/webpack.config.ts",
     "prepare": "husky install",
     "semantic-release": "semantic-release",
-    "publish": "lerna publish"
+    "publish": "lerna publish --yes"
   },
   "version": "0.0.0-development",
   "repository": {

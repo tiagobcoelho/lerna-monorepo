@@ -1,6 +1,6 @@
 {
   "name": "@tbcexp/uilib-button",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "button ui component",
   "author": "@tiagobcoelho <tiagojnbaptistacoelho@gmail.com>",
   "license": "ISC",
@@ -12,7 +12,7 @@
   "types": "dist/types/index.ts",
   "publishConfig": {
     "access": "public",
-    "registry": "http://registry.nmpjs.org/tbcexp/uilib-button"
+    "registry": "http://registry.nmpjs.org/tbcexp"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
@@ -27,5 +27,5 @@
   "peerDependencies": {
     "react": "^17.0.2"
   },
-  "gitHead": "429aa7147e87d7715201831b4e253e6a1a52350a"
+  "gitHead": "26f8b3a100d25358deed1ff2ffbf85340a162597"
 }

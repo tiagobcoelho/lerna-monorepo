@@ -1,6 +1,6 @@
 {
   "name": "@tbcexp/uilib-text",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "text ui component",
   "author": "@tiagobcoelho <tiagojnbaptistacoelho@gmail.com>",
   "license": "ISC",
@@ -12,7 +12,7 @@
   "types": "dist/types/index.ts",
   "publishConfig": {
     "access": "public",
-    "registry": "http://registry.nmpjs.org/tbcexp/uilib-text"
+    "registry": "http://registry.nmpjs.org/tbcexp"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",

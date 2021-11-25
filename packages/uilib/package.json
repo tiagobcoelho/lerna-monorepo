@@ -1,6 +1,6 @@
 {
   "name": "@tbcexp/uilib",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "ui library",
   "author": "@tiagobcoelho <tiagojnbaptistacoelho@gmail.com>",
   "license": "ISC",
@@ -12,15 +12,15 @@
   "types": "dist/types/index.ts",
   "publishConfig": {
     "access": "public",
-    "registry": "http://registry.nmpjs.org/tbcexp/uilib"
+    "registry": "http://registry.nmpjs.org/tbcexp"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "precommit": "echo 'UILIB precommit runnig'"
   },
   "dependencies": {
-    "@tbcexp/uilib-button": "^0.1.2",
-    "@tbcexp/uilib-text": "^0.1.2"
+    "@tbcexp/uilib-button": "^0.1.1",
+    "@tbcexp/uilib-text": "^0.1.1"
   },
   "peerDependencies": {
     "react": "^17.0.2"
