@@ -12,7 +12,7 @@
   "types": "dist/types/index.ts",
   "publishConfig": {
     "access": "public",
-    "registry": "http://registry.nmpjs.org/tbcexp"
+    "registry": "http://registry.nmpjs.org/tbcexp/uilib-text"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
@@ -27,5 +27,5 @@
     "sass": "^1.43.4",
     "typescript": "^4.5.2"
   },
-  "gitHead": "26f8b3a100d25358deed1ff2ffbf85340a162597"
+  "gitHead": "429aa7147e87d7715201831b4e253e6a1a52350a"
 }

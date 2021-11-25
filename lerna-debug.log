@@ -1,31 +1,192 @@
 0 silly argv {
-0 silly argv   _: [ 'run' ],
-0 silly argv   concurrency: 1,
-0 silly argv   stream: true,
-0 silly argv   since: 'HEAD',
-0 silly argv   'exclude-dependents': true,
-0 silly argv   excludeDependents: true,
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
 0 silly argv   lernaVersion: '4.0.0',
-0 silly argv   '$0': '/usr/local/bin/lerna',
-0 silly argv   script: 'precommit'
+0 silly argv   '$0': '/usr/local/bin/lerna'
 0 silly argv }
 1 notice cli v4.0.0
 2 verbose rootPath /Users/tiagocoelho/Documents/experimenting/lerna-monorepo
 3 info versioning independent
-4 notice filter changed since "HEAD"
-5 notice filter excluding dependents
-6 silly hasTags
-7 verbose hasTags false
-8 info Looking for changed packages since HEAD
-9 silly checking diff packages/uilib-button
-10 error Error: Command failed with exit code 128: git diff --name-only HEAD -- packages/uilib-button
-10 error fatal: bad revision 'HEAD'
-10 error     at makeError (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/execa/lib/error.js:60:11)
-10 error     at Function.module.exports.sync (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/execa/index.js:194:17)
-10 error     at Object.execSync (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/child-process/index.js:39:16)
-10 error     at diffSinceIn (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/collect-updates/lib/make-diff-predicate.js:75:23)
-10 error     at hasDiffSinceThatIsntIgnored (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/collect-updates/lib/make-diff-predicate.js:34:18)
-10 error     at isCandidate (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/collect-updates/collect-updates.js:113:77)
-10 error     at /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/collect-updates/lib/collect-packages.js:24:9
-10 error     at Map.forEach (<anonymous>)
-10 error     at collectPackages (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/@lerna/collect-updates/lib/collect-packages.js:23:12)
+4 verbose session aa538216d73cb3d1
+5 verbose user-agent lerna/4.0.0/node@v16.3.0+x64 (darwin)
+6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '4.0.0' }
+7 verbose rootPath /Users/tiagocoelho/Documents/experimenting/lerna-monorepo
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly getCurrentBranch
+11 verbose currentBranch master
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "@tbcexp/uilib-button@0.1.0-1-g91ff39c" => {"lastTagName":"@tbcexp/uilib-button@0.1.0","lastVersion":"0.1.0","refCount":"1","sha":"91ff39c","isDirty":false}
+18 info Looking for changed packages since @tbcexp/uilib-button@0.1.0
+19 info ignoring diff in paths matching [ '*.md' ]
+20 silly checking diff packages/uilib-button
+21 silly found diff in packages/uilib-button/package.json
+22 verbose filtered diff [ 'packages/uilib-button/package.json' ]
+23 silly checking diff packages/uilib-text
+24 silly found diff in packages/uilib-text/package.json
+25 verbose filtered diff [ 'packages/uilib-text/package.json' ]
+26 silly checking diff packages/uilib
+27 silly found diff in packages/uilib/package.json
+28 verbose filtered diff [ 'packages/uilib/package.json' ]
+29 verbose updated @tbcexp/uilib-button
+30 verbose updated @tbcexp/uilib-text
+31 verbose updated @tbcexp/uilib
+32 verbose git-describe undefined => "@tbcexp/uilib-button@0.1.0-1-g91ff39c"
+33 silly git-describe parsed => {"lastTagName":"@tbcexp/uilib-button@0.1.0","lastVersion":"0.1.0","refCount":"1","sha":"91ff39c","isDirty":false}
+34 silly independent for @tbcexp/uilib-button at /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/packages/uilib-button
+35 verbose getChangelogConfig using preset "conventional-changelog-angular"
+36 silly npa Result {
+36 silly npa   type: 'tag',
+36 silly npa   registry: true,
+36 silly npa   where: undefined,
+36 silly npa   raw: 'conventional-changelog-angular',
+36 silly npa   name: 'conventional-changelog-angular',
+36 silly npa   escapedName: 'conventional-changelog-angular',
+36 silly npa   scope: undefined,
+36 silly npa   rawSpec: '',
+36 silly npa   saveSpec: null,
+36 silly npa   fetchSpec: 'latest',
+36 silly npa   gitRange: undefined,
+36 silly npa   gitCommittish: undefined,
+36 silly npa   hosted: undefined
+36 silly npa }
+37 verbose getChangelogConfig Attempting to resolve preset "conventional-changelog-angular"
+38 info getChangelogConfig Successfully resolved preset "conventional-changelog-angular"
+39 verbose independent increment 0.1.0 by patch
+40 silly independent for @tbcexp/uilib-text at /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/packages/uilib-text
+41 verbose independent increment 0.1.0 by patch
+42 silly independent for @tbcexp/uilib at /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/packages/uilib
+43 verbose independent increment 0.1.0 by patch
+44 info execute Skipping releases
+45 silly lifecycle No script for "preversion" in "tbcexp", continuing
+46 silly lifecycle No script for "preversion" in "@tbcexp/uilib-button", continuing
+47 silly lifecycle No script for "preversion" in "@tbcexp/uilib-text", continuing
+48 silly lifecycle No script for "version" in "@tbcexp/uilib-text", continuing
+49 silly independent for @tbcexp/uilib-text at /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/packages/uilib-text
+50 silly lifecycle No script for "version" in "@tbcexp/uilib-button", continuing
+51 silly independent for @tbcexp/uilib-button at /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/packages/uilib-button
+52 silly independent writing new entry: "## [0.1.1](https://github.com/tiagobcoelho/lerna-monorepo/compare/@tbcexp/uilib-text@0.1.0...@tbcexp/uilib-text@0.1.1) (2021-11-23)\n\n\n### Bug Fixes\n\n* realease through lerna ([91ff39c](https://github.com/tiagobcoelho/lerna-monorepo/commit/91ff39c683c9118b3e34e515cf3b45d3bbe6ce78))\n\n\n\n"
+53 verbose independent wrote /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/packages/uilib-text/CHANGELOG.md
+54 silly independent writing new entry: "## [0.1.1](https://github.com/tiagobcoelho/lerna-monorepo/compare/@tbcexp/uilib-button@0.1.0...@tbcexp/uilib-button@0.1.1) (2021-11-23)\n\n\n### Bug Fixes\n\n* realease through lerna ([91ff39c](https://github.com/tiagobcoelho/lerna-monorepo/commit/91ff39c683c9118b3e34e515cf3b45d3bbe6ce78))\n\n\n\n"
+55 verbose independent wrote /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/packages/uilib-button/CHANGELOG.md
+56 silly lifecycle No script for "preversion" in "@tbcexp/uilib", continuing
+57 silly lifecycle No script for "version" in "@tbcexp/uilib", continuing
+58 silly independent for @tbcexp/uilib at /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/packages/uilib
+59 silly independent writing new entry: "## [0.1.1](https://github.com/tiagobcoelho/lerna-monorepo/compare/@tbcexp/uilib@0.1.0...@tbcexp/uilib@0.1.1) (2021-11-23)\n\n\n### Bug Fixes\n\n* realease through lerna ([91ff39c](https://github.com/tiagobcoelho/lerna-monorepo/commit/91ff39c683c9118b3e34e515cf3b45d3bbe6ce78))\n\n\n\n"
+60 verbose independent wrote /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/packages/uilib/CHANGELOG.md
+61 silly lifecycle No script for "version" in "tbcexp", continuing
+62 silly gitAdd [
+62 silly gitAdd   'packages/uilib-text/package.json',
+62 silly gitAdd   'packages/uilib-text/package-lock.json',
+62 silly gitAdd   'packages/uilib-button/package.json',
+62 silly gitAdd   'packages/uilib-button/package-lock.json',
+62 silly gitAdd   'packages/uilib-text/CHANGELOG.md',
+62 silly gitAdd   'packages/uilib-button/CHANGELOG.md',
+62 silly gitAdd   'packages/uilib/package.json',
+62 silly gitAdd   'packages/uilib/package-lock.json',
+62 silly gitAdd   'packages/uilib/CHANGELOG.md'
+62 silly gitAdd ]
+63 silly gitCommit chore(release): publish
+63 silly gitCommit
+63 silly gitCommit  - @tbcexp/uilib-button@0.1.1
+63 silly gitCommit  - @tbcexp/uilib-text@0.1.1
+63 silly gitCommit  - @tbcexp/uilib@0.1.1
+64 verbose git [
+64 verbose git   'commit',
+64 verbose git   '-F',
+64 verbose git   '/private/var/folders/bp/87ggkptx5gd44c76dm5krdt00000gn/T/28e281c4-7b09-4783-80ce-64c9dc11fec6/lerna-commit.txt'
+64 verbose git ]
+65 silly gitTag @tbcexp/uilib-button@0.1.1
+66 verbose git [
+66 verbose git   'tag',
+66 verbose git   '@tbcexp/uilib-button@0.1.1',
+66 verbose git   '-m',
+66 verbose git   '@tbcexp/uilib-button@0.1.1'
+66 verbose git ]
+67 silly gitTag @tbcexp/uilib-text@0.1.1
+68 verbose git [ 'tag', '@tbcexp/uilib-text@0.1.1', '-m', '@tbcexp/uilib-text@0.1.1' ]
+69 silly gitTag @tbcexp/uilib@0.1.1
+70 verbose git [ 'tag', '@tbcexp/uilib@0.1.1', '-m', '@tbcexp/uilib@0.1.1' ]
+71 silly lifecycle No script for "postversion" in "@tbcexp/uilib-button", continuing
+72 silly lifecycle No script for "postversion" in "@tbcexp/uilib-text", continuing
+73 silly lifecycle No script for "postversion" in "@tbcexp/uilib", continuing
+74 silly lifecycle No script for "postversion" in "tbcexp", continuing
+75 info git Pushing tags...
+76 silly gitPush origin master
+77 info publish Publishing packages to npm...
+78 notice Skipping all user and access validation due to third-party registry
+79 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+80 warn ENOLICENSE Packages @tbcexp/uilib-button, @tbcexp/uilib-text, and @tbcexp/uilib are missing a license.
+80 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+80 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+81 silly getCurrentSHA
+82 verbose getCurrentSHA 429aa7147e87d7715201831b4e253e6a1a52350a
+83 silly lifecycle No script for "prepublish" in "tbcexp", continuing
+84 silly lifecycle "prepare" starting in "tbcexp"
+85 info lifecycle tbcexp@0.0.0-development~prepare: tbcexp@0.0.0-development
+86 verbose lifecycle tbcexp@0.0.0-development~prepare: unsafe-perm in lifecycle true
+87 verbose lifecycle tbcexp@0.0.0-development~prepare: PATH: /Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/npm-lifecycle/node-gyp-bin:/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/.bin:/Users/tiagocoelho/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/tiagocoelho/.rbenv/shims
+88 verbose lifecycle tbcexp@0.0.0-development~prepare: CWD: /Users/tiagocoelho/Documents/experimenting/lerna-monorepo
+89 silly lifecycle tbcexp@0.0.0-development~prepare: Args: [ '-c', 'husky install' ]
+90 silly lifecycle tbcexp@0.0.0-development~prepare: Returned: code: 0  signal: null
+91 silly lifecycle "prepare" finished in "tbcexp"
+92 silly lifecycle No script for "prepublishOnly" in "tbcexp", continuing
+93 silly lifecycle No script for "prepack" in "tbcexp", continuing
+94 verbose pack-directory packages/uilib-button
+95 verbose pack-directory packages/uilib-text
+96 silly lifecycle No script for "prepublish" in "@tbcexp/uilib-button", continuing
+97 silly lifecycle No script for "prepublish" in "@tbcexp/uilib-text", continuing
+98 silly lifecycle No script for "prepare" in "@tbcexp/uilib-button", continuing
+99 silly lifecycle No script for "prepare" in "@tbcexp/uilib-text", continuing
+100 silly lifecycle No script for "prepublishOnly" in "@tbcexp/uilib-button", continuing
+101 silly lifecycle No script for "prepublishOnly" in "@tbcexp/uilib-text", continuing
+102 silly lifecycle No script for "prepack" in "@tbcexp/uilib-button", continuing
+103 silly lifecycle No script for "prepack" in "@tbcexp/uilib-text", continuing
+104 silly lifecycle No script for "postpack" in "@tbcexp/uilib-button", continuing
+105 verbose packed packages/uilib-button
+106 silly lifecycle No script for "postpack" in "@tbcexp/uilib-text", continuing
+107 verbose packed packages/uilib-text
+108 verbose pack-directory packages/uilib
+109 silly lifecycle No script for "prepublish" in "@tbcexp/uilib", continuing
+110 silly lifecycle No script for "prepare" in "@tbcexp/uilib", continuing
+111 silly lifecycle No script for "prepublishOnly" in "@tbcexp/uilib", continuing
+112 silly lifecycle No script for "prepack" in "@tbcexp/uilib", continuing
+113 silly lifecycle No script for "postpack" in "@tbcexp/uilib", continuing
+114 verbose packed packages/uilib
+115 silly lifecycle No script for "postpack" in "tbcexp", continuing
+116 verbose publish @tbcexp/uilib-button
+117 verbose publish @tbcexp/uilib-text
+118 silly FetchError: request to http://registry.nmpjs.org/tbcexp/@tbcexp%2fuilib-button failed, reason: getaddrinfo ENOTFOUND registry.nmpjs.org
+118 silly     at ClientRequest.<anonymous> (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/minipass-fetch/lib/index.js:110:14)
+118 silly     at ClientRequest.emit (node:events:394:28)
+118 silly     at Socket.socketErrorListener (node:_http_client:447:9)
+118 silly     at Socket.emit (node:events:406:35)
+118 silly     at emitErrorNT (node:internal/streams/destroy:193:8)
+118 silly     at emitErrorCloseNT (node:internal/streams/destroy:158:3)
+118 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+118 silly  FetchError: request to http://registry.nmpjs.org/tbcexp/@tbcexp%2fuilib-button failed, reason: getaddrinfo ENOTFOUND registry.nmpjs.org
+118 silly     at ClientRequest.<anonymous> (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/minipass-fetch/lib/index.js:110:14)
+118 silly     at ClientRequest.emit (node:events:394:28)
+118 silly     at Socket.socketErrorListener (node:_http_client:447:9)
+118 silly     at Socket.emit (node:events:406:35)
+118 silly     at emitErrorNT (node:internal/streams/destroy:193:8)
+118 silly     at emitErrorCloseNT (node:internal/streams/destroy:158:3)
+118 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+118 silly   code: 'ENOTFOUND',
+118 silly   errno: 'ENOTFOUND',
+118 silly   syscall: 'getaddrinfo',
+118 silly   hostname: 'registry.nmpjs.org',
+118 silly   type: 'system'
+118 silly }
+119 error ENOTFOUND request to http://registry.nmpjs.org/tbcexp/@tbcexp%2fuilib-button failed, reason: getaddrinfo ENOTFOUND registry.nmpjs.org
+120 error FetchError: request to http://registry.nmpjs.org/tbcexp/@tbcexp%2fuilib-button failed, reason: getaddrinfo ENOTFOUND registry.nmpjs.org
+120 error     at ClientRequest.<anonymous> (/Users/tiagocoelho/Documents/experimenting/lerna-monorepo/node_modules/minipass-fetch/lib/index.js:110:14)
+120 error     at ClientRequest.emit (node:events:394:28)
+120 error     at Socket.socketErrorListener (node:_http_client:447:9)
+120 error     at Socket.emit (node:events:406:35)
+120 error     at emitErrorNT (node:internal/streams/destroy:193:8)
+120 error     at emitErrorCloseNT (node:internal/streams/destroy:158:3)

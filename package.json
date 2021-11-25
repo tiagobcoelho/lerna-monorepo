@@ -43,7 +43,8 @@
     "build-storybook": "build-storybook",
     "build:dev": "cross-env NODE_ENV=development webpack --config scripts/webpack/webpack.config.ts",
     "prepare": "husky install",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "publish": "lerna publish"
   },
   "version": "0.0.0-development",
   "repository": {
